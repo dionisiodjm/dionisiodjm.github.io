@@ -1,0 +1,98 @@
+/* Custom Styles */
+:root {
+    --primary-color: #3498db;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* About Section */
+.about-section {
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-img-container {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.profile-img-container img {
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skills-badge {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.skills-badge .badge {
+    margin: 0 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: -10px;
+    left: 0;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+.signature {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.signature:hover {
+    opacity: 1;
+}
+
+.skill-progress {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+}
